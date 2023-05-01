@@ -5,6 +5,34 @@
 
 This Docker image provides a pre-configured RabbitMQ server for EqualifyApp. Simply run the container to start the server.
 
+## Queues
+### launch_axe
+
+### launch_tech
+
+### launch_uppies
+
+### launch_crawler_sitemap
+
+### launch_crawler
+
+### landing_axe
+
+### landing_tech
+
+### landing_uppies
+
+### landing_crawler_sitemap
+
+### landing_crawler
+
+### oops_matrix
+
+### oops_workers
+
+### oops_hole
+
+
 ## Installation
 
 To install and use this Docker image, follow these steps:
