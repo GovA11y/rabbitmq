@@ -65,7 +65,7 @@
         }
     },
     {
-        "name": "worker_maddison",
+        "name": "worker_crawler",
         "password": "map_the_world",
         "tags": [
             "app"
@@ -75,7 +75,7 @@
         }
     },
     {
-        "name": "worker_jefferson",
+        "name": "worker_crawler_sitemap",
         "password": "explore_the_unknown",
         "tags": [
             "app"
@@ -134,14 +134,14 @@
         "read": ".*"
     },
     {
-        "user": "worker_maddison",
+        "user": "worker_crawler",
         "vhost": "gova11y",
         "configure": ".*",
         "write": ".*",
         "read": ".*"
     },
     {
-        "user": "worker_jefferson",
+        "user": "worker_crawler_sitemap",
         "vhost": "gova11y",
         "configure": ".*",
         "write": ".*",
