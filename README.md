@@ -3,7 +3,7 @@
 
 [![🏗️📤 Build and publish 🐳 images](https://github.com/EqualifyApp/a11y-rabbit/actions/workflows/containerize.yml/badge.svg)](https://github.com/EqualifyApp/a11y-rabbit/actions/workflows/containerize.yml)
 
-A11yRabbit is a pre-configured Docker image that provides RabbitMQ server for the EqualifyApp. This documentation explains how to use A11yRabbit and how to manage its queues, ports, volumes, and accounts.
+A11yRabbit is a pre-configured Docker image that provides RabbitMQ server for the EqualifyApp.
 
 
 
