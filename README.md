@@ -9,7 +9,7 @@ A11yRabbit is a pre-configured Docker image that provides RabbitMQ server for th
 
 ## Usage
 
-This Docker image provides a pre-configured RabbitMQ server for EqualifyApp. To use A11yRabbit, simply run the container to start the server. The RabbitMQ management console is available at http://localhost:15672 using the default username and password (guest/guest).
+This Docker image provides a pre-configured RabbitMQ server for EqualifyApp. To use A11yRabbit, simply run the container to start the server. The RabbitMQ management console is available at http://localhost:15672 using the username and password (bhensel/big_boss).
 
 ```sh
 docker run -d --name a11y-rabbit -p 5672:5672 -p 15672:15672 equalifyapp/a11y-rabbit
