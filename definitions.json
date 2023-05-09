@@ -299,6 +299,36 @@
         }
     },
     {
+        "name": "error_uppies",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
+        "name": "error_axe",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
+        "name": "error_tech",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
         "name": "oops_hole",
         "vhost": "gova11y",
         "durable": true,
