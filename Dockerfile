@@ -1,4 +1,4 @@
-FROM rabbitmq:rabbitmq:management-alpine
+FROM rabbitmq:management-alpine
 
 
 COPY rabbitmq.conf /etc/rabbitmq/
