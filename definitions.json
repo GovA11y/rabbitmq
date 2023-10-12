@@ -1,8 +1,8 @@
 {
-"rabbit_version": "3.11.13",
-"rabbitmq_version": "3.11.13",
+"rabbit_version": "3.12.4",
+"rabbitmq_version": "3.12.4",
 "product_name": "RabbitMQ",
-"product_version": "3.11.13",
+"product_version": "3.12.4",
 "users": [
     {
         "name": "yeeter_in_chief",
@@ -157,7 +157,7 @@
 "global_parameters": [
     {
         "name": "cluster_name",
-        "value": "rabbit@gova11y"
+        "value": "GovA11y_RabbitMQ"
     },
     {
         "name": "internal_cluster_id",
@@ -347,12 +347,98 @@
             "x-message-ttl": 7200000,
             "x-queue-type": "classic"
         }
+    },
+    {
+        "name": "launch_domain",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
+        "name": "landing_domain",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
+        "name": "landing_domain_sitemaps",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
+    },
+    {
+        "name": "landing_domain_txts",
+        "vhost": "gova11y",
+        "durable": true,
+        "auto_delete": false,
+        "arguments": {
+            "x-message-ttl": 7200000,
+            "x-queue-type": "classic"
+        }
     }
 ],
 "exchanges": [
-
+    {
+        "name": "launch",
+        "type": "topic",
+        "durable": true,
+        "auto_delete": false
+    },
+    {
+        "name": "landing",
+        "type": "topic",
+        "durable": true,
+        "auto_delete": false
+    },
+    {
+        "name": "error",
+        "type": "topic",
+        "durable": true,
+        "auto_delete": false
+    }
 ],
 "bindings": [
-
+    {
+        "source": "launch",
+        "destination": "launch_axe",
+        "routing_key": "axe"
+    },
+    {
+        "source": "launch",
+        "destination": "launch_tech",
+        "routing_key": "tech"
+    },
+    {
+        "source": "launch",
+        "destination": "launch_uppies",
+        "routing_key": "uppies"
+    },
+    {
+        "source": "landing",
+        "destination": "landing_axe",
+        "routing_key": "axe"
+    },
+    {
+        "source": "landing",
+        "destination": "landing_tech",
+        "routing_key": "tech"
+    },
+    {
+        "source": "error",
+        "destination": "error_crawler",
+        "routing_key": "crawler"
+    }
 ]
 }
