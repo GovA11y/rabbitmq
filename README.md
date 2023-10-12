@@ -1,6 +1,14 @@
-# rabbitmq
+# RabbitMQ
 
 🐰 Dockerized RabbitMQ for GovA11y 🐰
+
+
+## Configuration
+The config is handled in the rabbitmq.conf file. You can [find docs here.](https://www.rabbitmq.com/configure.html#configuration-files)
+
+Docker Image Used: [`rabbitmq:management-alpine`](https://hub.docker.com/_/rabbitmq)
+"rabbit_version": "3.12.4",
+"rabbitmq_version": "3.12.4",
 
 # A11yRabbit
 
